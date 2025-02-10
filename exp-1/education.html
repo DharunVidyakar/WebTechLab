@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Dharun Vidyakar K S</h1>
+            <img src="WhatsApp Image 2023-12-20 at 17.46.24_66f837c9.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="button-container">
+            <a href="education.html" target="_blank" class="button">Education</a>
+            <a href="projects.html" target="_blank" class="button">Projects</a>
+            <a href="skillset.html" target="_blank" class="button">Skill Set</a>
+            <a href="softskill.html" target="_blank" class="button">Soft Skills</a>
+            <a href="aoi.html" target="_blank" class="button">Areas of Interests</a>
+        </div>
+    </header>
+    <main>
+        <div class="education-details">
+            <h2>Educational Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Degree</th>
+                        <th>Institution</th>
+                        <th>Year Completed</th>
+                        <th>Percentage</th>
+                        <th>Certificate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>S.S.L.C</td>
+                        <td>Velalar Vidyalayaa Senior Secondary School,Erode</td>
+                        <td>2021</td>
+                        <td>93%</td>
+                        <td><button class="view-certificate" onclick="document.getElementById('cert1').showModal()">View Certificate</button></td>
+                    </tr>
+                    <tr>
+                        <td>H.S.C</td>
+                        <td>Velalar Vidyalayaa Senior Secondary School,Erode</td>
+                        <td>2023</td>
+                        <td>91%</td>
+                        <td><button class="view-certificate" onclick="document.getElementById('cert2').showModal()">View Certificate</button></td>
+                    </tr>
+                    <tr>
+                        <td>B.Tech - IT</td>
+                        <td>Kongu Engineering College,Erode</td>
+                        <td>2027</td>
+                        <td>9.13(2nd sem)</td>
+                        <td><button class="view-certificate" onclick="document.getElementById('cert3').showModal()">View Certificate</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Certificate 1 Modal -->
+        <dialog id="cert1" class="popup">
+            <div class="popup-content">
+                <h3>SSLC</h3>
+                <iframe src="SSLC.pdf" frameborder="0"></iframe>
+                <button class="close-popup" onclick="this.closest('dialog').close()">Close</button>
+            </div>
+        </dialog>
+
+        <!-- Certificate 2 Modal -->
+        <dialog id="cert2" class="popup">
+            <div class="popup-content">
+                <h3>HSC</h3>
+                <iframe src="HSC.pdf" frameborder="0"></iframe>
+                <button class="close-popup" onclick="this.closest('dialog').close()">Close</button>
+            </div>
+        </dialog>
+        <dialog id="cert3" class="popup">
+            <div class="popup-content">
+                <h3>B.Tech</h3>
+                <iframe src="DV_result 2.pdf" frameborder="0"></iframe>
+                <button class="close-popup" onclick="this.closest('dialog').close()">Close</button>
+            </div>
+        </dialog>
+    </main>
+</body>
+</html>

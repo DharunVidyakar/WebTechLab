@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Vegetables - Grocery Shop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">GroceryShop</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="shopDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shop
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="shopDropdown">
+                                <li><a class="dropdown-item" href="vegetables.html">Vegetables</a></li>
+                                <li><a class="dropdown-item" href="fruits.html">Fruits</a></li>
+                                <li><a class="dropdown-item" href="dairy.html">Dairy</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="popupMessage" class="popup">Item successfully added!</div>
+    <!-- Fresh Vegetables Section -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Fresh Vegetables</h2>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="assets/tomato.jpeg" class="card-img-top" alt="Tomato">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Tomato</h5>
+                        <p class="text-success">₹40 / kg</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="assets/onion.jpeg" class="card-img-top" alt="Onion">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Onion</h5>
+                        <p class="text-success">₹50 / kg</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="assets/potato.jpeg" class="card-img-top" alt="Potato">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Potato</h5>
+                        <p class="text-success">₹30 / kg</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="assets/carrot.jpeg" class="card-img-top" alt="Carrot">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Carrot</h5>
+                        <p class="text-success">₹60 / kg</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="assets/cauliflower.jpeg" class="card-img-top" alt="Cauliflower">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cauliflower</h5>
+                        <p class="text-success">₹35 / piece</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="assets/cabbage.jpeg" class="card-img-top" alt="Cabbage">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Cabbage</h5>
+                        <p class="text-success">₹30 / piece</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="assets/ladyfinger.jpeg" class="card-img-top" alt="Ladyfinger">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ladyfinger</h5>
+                        <p class="text-success">₹45 / kg</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="assets/brinjal.jpeg" class="card-img-top" alt="Brinjal">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Brinjal</h5>
+                        <p class="text-success">₹40 / kg</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="assets/spinach.jpeg" class="card-img-top" alt="Spinach">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Spinach</h5>
+                        <p class="text-success">₹25 / bunch</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="assets/bittergourd.jpeg" class="card-img-top" alt="Bitter Gourd">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Bitter Gourd</h5>
+                        <p class="text-success">₹50 / kg</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="assets/broccoli.jpeg" class="card-img-top" alt="Broccoli">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Broccoli</h5>
+                        <p class="text-success">₹80 / piece</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="col-md-3 mb-4">
+                <div class="card">
+                    <img src="assets/beans.jpeg" class="card-img-top" alt="Beans">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Beans</h5>
+                        <p class="text-success">₹70 / kg</p>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 Grocery Shop | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
