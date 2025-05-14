@@ -1,0 +1,25 @@
+<!-- Navbar -->
+<nav class="navbar">
+  <div class="logo">Erode Water Monitoring</div>
+  <ul class="nav-links">
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/waterData">Water Bodies</a></li>
+    <li><a routerLink="/add">Add Water Body</a></li>
+    <li><a routerLink="/about">About Us</a></li>
+  </ul>
+</nav>
+
+<!-- Form Content -->
+<div class="form-container">
+  <h2>Add New Water Body Data</h2>
+  <form (ngSubmit)="submitData()" #waterForm="ngForm">
+    <input type="text" placeholder="Water Body Name" name="water_body_name" [(ngModel)]="formData.water_body_name" required />
+    <input type="number" placeholder="Temperature (°C)" name="temperature" [(ngModel)]="formData.temperature" required />
+    <input type="number" placeholder="pH" name="pH" [(ngModel)]="formData.pH" required />
+    <input type="number" placeholder="Turbidity (NTU)" name="turbidity" [(ngModel)]="formData.turbidity" required />
+    <input type="number" placeholder="Dissolved Oxygen (mg/L)" name="dissolved_oxygen" [(ngModel)]="formData.dissolved_oxygen" required />
+    <button type="submit">Submit</button>
+  </form>
+
+  <p *ngIf="message" class="success-message">{{ message }}</p>
+</div>

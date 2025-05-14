@@ -1,0 +1,48 @@
+<!-- Navbar (same as before) -->
+<nav class="navbar">
+  <div class="logo">Erode Water Monitoring</div>
+  <ul class="nav-links">
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/waterData">Water Bodies</a></li>
+    <li><a routerLink="/add">Add Water Body</a></li>
+    <li><a routerLink="#">About Us</a></li>
+  </ul>
+</nav>
+
+<!-- Page Content -->
+<div class="water-container">
+  <h2>Monitored Water Bodies</h2>
+
+  <!-- Search Bar -->
+  <input
+    type="text"
+    placeholder="Search by Water Body Name..."
+    class="search-input"
+    [(ngModel)]="searchText"
+  />
+  <button class="search-button" (click)="search()">Search</button>
+
+  <!-- Water Data Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Temperature (°C)</th>
+        <th>pH</th>
+        <th>Turbidity (NTU)</th>
+        <th>Dissolved Oxygen (mg/L)</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let water of waterData">
+        <td>{{ water.water_body_name }}</td>
+        <td>{{ water.temperature }}</td>
+        <td>{{ water.pH }}</td>
+        <td>{{ water.turbidity }}</td>
+        <td>{{ water.dissolved_oxygen }}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+</div>
